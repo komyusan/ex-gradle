@@ -51,36 +51,71 @@ public class Hero {
             System.out.printf("勇者%sは道半ばで力尽きてしまった。\n", name);
         }
     }
+    
     //以下getter
+
+    /**
+     * nameのgetter
+     * @return 名前
+     */
     public String getName(){
         return this.name;
     }
-    
+
+    /** 
+     * hitPointのgetter
+     * @return HP
+     */
     public int getHitPoint(){
         return this.hitPoint;
     }
 
+    /**
+     * attackのgetter
+     * @return 攻撃力
+     */
     public int getAttack(){
         return this.attack;
     }
 
+    /**
+     * deadのgetter
+     * @return 生死状態。true=死亡。
+     */
     public boolean getDead(){
         return this.dead;
     }
     
     //以下setter
+
+    /**
+     * nameのsetter
+     * @param name 設定したい名前
+     */
     public void setName(String name){
         this.name=name;
     }
 
+    /**
+     * hitPointのsetter
+     * @param hitPoint 設定したいHP
+     */
     public void setHitPoint(int hitPoint){
         this.hitPoint=hitPoint;
     }
 
+    /**
+     * attackのsetter
+     * @param attack 設定したい攻撃力
+     */
     public void setAttack(int attack){
         this.attack=attack;
     }
 
+    /**
+     * deadのsetter
+     * @param dead 設定したい生死状態。true=死亡。
+     */
     public void setDead(boolean dead){
         this.dead=dead;
     }
